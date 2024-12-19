@@ -12,13 +12,12 @@
   <li>Customers with 2 products have a low churn rate at 7.6% and it also has the highest number of customers. Customers with above 2 products have above 80% churn rate. </li>
   <li>Active member has much lower churn rate than non active member at 14.26% vs 27%.</li>
   <li>For people at age between 40 and 65 have a churn rate of 39%, which is almost 4 times as high as clients from other demographics, which was standing at 10.8%. However, for clients below age of 40, it totaled at a population of 6419 with a churn rate of 10.87%. </li>
-  <li></li>
 </ol>
 
 <h3>Insights Deep Dive</h3>
 <p>The features are related the most to the churns are Geography, Gender, Number of Products, Membership.</p>
+<p>The Datasets is Bank Customer Churn from <a href="https://mavenanalytics.io/data-playground?order=date_added%2Cdesc&search=bank">Maven Analytics Data Playground</a>. The EDA and machine learning model were written in python libraries such as pandas, seaborn, matplotlib, and sklearn. To see the technical details, olease take a look at the uploaded notebooks.</p>
 <h4>Geography and churn</h4>
-<p>The Datasets is Bank Customer Churn from <a href="https://mavenanalytics.io/data-playground?order=date_added%2Cdesc&search=bank">Maven Analytics Data Playground</a>. The EDA and machine learning model were written under python libraries such as pandas, seaborn, matplotlib, and sklearn.</p>
 <p>
   France has the most amount of customers of 5014 compairing to Germany of 2509, Spain od 2064. However, the churn rate in Germany is the highest at 32.44% which is twice as high as the churn rate in Spain or France. The churns in Germany is also much more concentrated for people between age of 40 and 60 while in France and Spain, it much less intense.
 </p>
@@ -59,6 +58,22 @@ Clients in a membership have a much lower churn rate of 14.27% compairing to the
 
 ![age_segment_churn](https://github.com/user-attachments/assets/fbd18790-1bb6-4ba4-8f82-625e3484e610)
 
+<h3>Machine Learning Model Walk Through</h3>
+<p>I choose K Nearest Neighbors classification models to train the datasets to build the predictive model. I picked 11 as the optimized number of neighbors for classification.</p>
+
+![knn_optimized_k](https://github.com/user-attachments/assets/e8097fd4-57c0-45a3-a7d1-d53139075fff)
+
+<p>Here are the evaluation of the model. The train score is 85%, and the test score is 84%. The model has a high accuracy not overfit. However, it does have a precision score of 71% and a low recall score of 37% for the positive case.</p>
+
+![knn_evaluation](https://github.com/user-attachments/assets/988b58bb-ba93-4dab-8b16-c2ad207268c0)
+<p>The precision-recall curves are show the precision score and recall score are at each other's expenses. It's not possible to have a point where the model can enjoy a high precision and a high recall score at the same time.</p>
+
+
+![precision-recall-curve](https://github.com/user-attachments/assets/5fa37c78-d997-42dc-a0f4-320a97e72fa1)
+
+<p>The model has a roc curve with an AUC of 89%. It means the model have an accuracy of 89% of correctly classifying a given case all in all.</p>
+
+![roc_curve](https://github.com/user-attachments/assets/6fd729e4-9f84-4b55-a9d5-a65664f3e83c)
 
 
 <h3>Recommandations</h3>
@@ -70,5 +85,4 @@ Clients in a membership have a much lower churn rate of 14.27% compairing to the
   <li>Avoid clients with a credit score of less than 400 or help clients' crdit scores stay above 400. </li>
 </ol>
 
-<h3>Machine Learning Models</h3>
-<p>I have a pplied</p>
+
