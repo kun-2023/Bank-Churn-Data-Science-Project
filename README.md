@@ -1,4 +1,21 @@
 <h1>Bank-Churn-Data-Science-Project</h1>
+<h2>Table of Content</h2>
+<ul>
+  <li>Dashboard Preview</li>
+  <li>Background and Overview</li>
+  <li>Executive Summary</li>
+  <li>Insights and Deep Dive</li>
+  <li>Machine Learning Model and Walk Through</li>
+  <li>Reccomandations</li>
+</ul>
+<h3>DashBoard Preview</h3>
+
+![European Banks Dashboard](https://github.com/user-attachments/assets/61944cf6-c3b5-4a89-ab32-87495fea2252)
+
+<p>An interactive tableau dashboard could be accessed <a href="https://public.tableau.com/app/profile/kun.bi/viz/european_bank/EuropeanBankChurnDashboard">here</a>.</p>
+
+
+
 <h3>Background and Overview</h3>
 <p>This European bank is currently operating in France, Spain and Germany and provides services such as deposits management, credit card services and membership benefits. According to the latest datasets regarding to its 10000 customers of the bank, roughly 20% of the customers had chosen to close their bank account for good. That was a big loss for the bank. To help bank reduce churn rate, I decided to apply an EDA to discover the hidden patterns behind the churns and a Kneighborclassfication machine learning model to help predict the churn or unchurn outcomes.</p>
 <h3>Data Structures</h3>
